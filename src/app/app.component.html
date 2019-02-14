@@ -1,0 +1,106 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h2>
+    {{ title }} !
+  </h2>
+</div>
+
+
+<mat-paginator [length]="3" [pageSize]="pageSize" [pageSizeOptions]="pageSizeOptions" (page)="pageEvent = $event"></mat-paginator>
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel> First column </ng-template>
+      <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3-FiqgVzXqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  <img src="assets/1" alt="">
+                </iframe>
+            </div>
+            <div class="col-sm mx-auto my-auto">
+              <h1 class="quote"> “ ” </h1>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt id ratione laboriosam architecto eos autem, enim reiciendis harum deleniti sequi repellat aliquam ab beatae pariatur praesentium omnis nesciunt tempora iure! </p>
+            </div>
+            <div class="col-sm">
+              <img src="assets/1.jpg">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm ">
+                <img src="assets/2.jpg">
+            </div>
+            <div class="col-sm">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3-FiqgVzXqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm mx-auto my-auto">
+              <h1 class="quote"> “ ” </h1>
+               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad consequuntur, possimus explicabo cupiditate animi? Libero laboriosam velit eaque expedita, quod omnis, est aut repellendus voluptate voluptates autem. Similique, voluptatibus.</p>
+            </div>
+          </div>
+        </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+  <form [formGroup]="secondFormGroup">
+    <ng-template matStepLabel> Second column </ng-template>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3-FiqgVzXqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              <img src="assets/1" alt="">
+            </iframe>
+          </div>
+        <div class="col-sm mx-auto my-auto">
+          <h1 class="quote"> “ ” </h1>
+          <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt id ratione laboriosam architecto eos autem, enim reiciendis harum deleniti sequi repellat aliquam ab beatae pariatur praesentium omnis nesciunt tempora iure! </p>
+        </div>
+        <div class="col-sm">
+          <img src="assets/1.jpg">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm ">
+            <img src="assets/2.jpg">
+        </div>
+        <div class="col-sm">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3-FiqgVzXqY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-sm mx-auto my-auto">
+          <h1 class="quote"> “ ” </h1>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad consequuntur, possimus explicabo cupiditate animi? Libero laboriosam velit eaque expedita, quod omnis, est aut repellendus voluptate voluptates autem. Similique, voluptatibus.</p>
+        </div>
+      </div>
+    </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel> Third column </ng-template>
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm">
+            <img src="assets/code.jpg">
+          </div>
+          <div class="col-sm">
+            <img src="assets/code.jpg">
+          </div>
+          <div class="col-sm">
+            <img src="assets/code.jpg">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+              <img src="assets/code.jpg">
+            </div>
+            <div class="col-sm">
+              <img src="assets/code.jpg">
+            </div>
+            <div class="col-sm">
+              <img src="assets/code.jpg">
+          </div>
+        </div>
+      </div>
+  </mat-step>
+</mat-horizontal-stepper>

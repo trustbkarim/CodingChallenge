@@ -1,0 +1,16 @@
+h2 {
+    margin: 2rem;
+}
+img {
+    width: 100%;
+}
+h1 {
+    font-family: initial;
+}
+.quote {
+    text-align: center;
+    font-size: 7rem;
+}
+p {
+    text-align: center;
+}
