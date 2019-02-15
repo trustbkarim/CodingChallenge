@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatButtonModule } from '@angular/material/button';
 import { MatPaginatorModule } from '@angular/material/paginator';
-
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     ReactiveFormsModule,
     MatInputModule,
     MatButtonModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatIconModule
   ],
   exports: [
     AppComponent
